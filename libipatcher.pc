@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libipatcher
+Description: A small C++ wrapper around iBoot32Patcher
+Version: LIBRARY_GIT_VERSION_NUM
+Libs: -L${libdir} -lipatcher -lcurl -lxpwn -lcommon -lpng -lz
+Cflags: -I${includedir}
